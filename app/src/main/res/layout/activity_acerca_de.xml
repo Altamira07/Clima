@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luisito.clima.AcercaDeActivity">
+    <ImageView
+        android:src="@drawable/acerca_de"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_above="@+id/nombre"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/nombre"
+        android:text="@string/nombre"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_centerVertical="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/txtEmail"
+        android:layout_below="@+id/nombre"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="@string/strMiEmail"/>
+    <TextView
+        android:id="@+id/txtTel"
+        android:layout_below="@+id/txtEmail"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="@string/strMiTelefono"/>
+
+</RelativeLayout>

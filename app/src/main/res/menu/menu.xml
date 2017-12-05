@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/bMapa"
+        app:showAsAction="collapseActionView"
+        android:title="Mapa"
+        />
+    <item
+        app:showAsAction="collapseActionView"
+        android:id="@+id/mAcercaDe"
+        android:title="Acerca de"/>
+</menu>

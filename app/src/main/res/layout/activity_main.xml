@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.luisito.clima.MainActivity"
+    android:background="#0288D1"
+    >
+    <LinearLayout
+        android:id="@+id/linear"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#FFF"
+        android:layout_margin="10dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txvCiudad"
+                android:layout_width="266dp"
+                android:layout_height="wrap_content"
+                android:text="Ciudad"
+                android:textColor="#BDBDBD"
+                android:textSize="15dp"
+                android:textAlignment="center"
+                android:layout_below="@+id/txvTemperatura"
+                android:layout_toRightOf="@+id/imvClimaD"
+                android:layout_toEndOf="@+id/imvClimaD" />
+
+            <ImageView
+                android:id="@+id/imvClimaD"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+
+            <TextView
+                android:id="@+id/txvTemperatura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/imvClimaD"
+                android:text="Temp"
+                android:textAlignment="center"
+                android:textColor="#212121"
+                android:textSize="50dp" />
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_below="@id/txvCiudad"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txtTempMax"
+                    android:text="TEMP MAX"
+                    android:layout_width="150dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/txtTempMin"
+                    android:text="TEMP MIN"
+                    android:layout_margin="10dp"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/dReclicle"
+        android:scrollbars="vertical"
+        android:layout_below="@id/linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+</RelativeLayout>
